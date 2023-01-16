@@ -1,0 +1,37 @@
+:root{
+    --main-text-color: #FF6060;
+}
+
+.kasa-box-error {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 150px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.kasa-box-error-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 66px;
+}
+
+.kasa-box-error-logo h2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    color: var(--main-text-color);
+}
+
+.kasa-box-error-link * {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--main-text-color);
+}
