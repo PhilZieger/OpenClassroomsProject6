@@ -6,7 +6,7 @@ function Home() {
     return (
       <div className='kasa-home'>
         <div className='kasa-home-background'>
-          <img alt="Arriere plan de style" src={Background} />
+          <img className='kasa-home-img' alt="Arriere plan de style" src={Background} />
           <h1>Chez vous, partout et ailleurs</h1>
         </div>
         <Card/>

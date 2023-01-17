@@ -1,0 +1,60 @@
+.kasa-about {
+    max-width: 1240px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 28px;
+    margin-bottom: 28px;
+}
+
+.kasa-about-img {
+    opacity: 0.8;
+    border-radius: 25px;
+    background: url("../assets/background-about.png");
+}
+
+.kasa-about-collapse {
+    width: 975px;
+    height: 47px;
+    padding-left: 18px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #FF6060;
+    border-radius: 5px;
+}
+
+.kasa-about-collapse h2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.kasa-about-expend {
+    width: 987px;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: #F7F7F7;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.kasa-about-expend span {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    color: #FF6060;
+}
+
+.kasa-about-collapse-box {
+    margin-top: 33px;
+    margin-bottom: 33px;
+}
