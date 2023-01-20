@@ -33,3 +33,35 @@
 .kasa-nav *:hover {
     text-decoration-line: underline;
 }
+
+@media screen and (max-width: 767px) { /* Mobile */
+    .kasa-header {
+        max-width: 767px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .kasa-header img {
+        width: 145px;
+        height: 47px;
+    }
+
+    .kasa-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .kasa-nav * {
+        text-decoration: none;
+        color: #FF6060;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+}

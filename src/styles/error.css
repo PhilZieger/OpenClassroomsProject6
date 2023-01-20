@@ -26,6 +26,7 @@
     font-weight: 500;
     font-size: 36px;
     color: var(--main-text-color);
+    text-align: center;
 }
 
 .kasa-box-error-link * {
@@ -34,4 +35,30 @@
     font-weight: 500;
     font-size: 18px;
     color: var(--main-text-color);
+}
+
+@media screen and (max-width: 767px) { /* Mobile */
+    .kasa-box-error {
+        gap: 133px;
+        margin-top: 150px;
+        margin-bottom: 100px;
+    }
+
+    .kasa-box-error-logo {
+        gap: 11px;
+    }
+
+    .kasa-box-error-logo img {
+        width: 198px;
+        height: 80px;
+    }
+
+    .kasa-box-error-logo h2 {
+        font-size: 18px;
+        max-width: 260px;
+    }
+
+    .kasa-box-error-link * {
+        font-size: 14px;
+    }
 }

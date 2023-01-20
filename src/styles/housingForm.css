@@ -9,13 +9,6 @@
     margin-bottom: 20px;
 }
 
-.kasa-housing-banner img {
-    border-radius: 25px;
-    width: 1240px;
-    height: 415px;
-    object-fit: cover;
-}
-
 .kasa-housing-header {
     display: flex;
     flex-direction: row;
@@ -144,4 +137,239 @@
 
 .kasa-housing-collapse div #kasa-expend {
     width: 546px;
+}
+
+.kasa-housing-banner {
+    width: 1240px;
+    height: 415px;
+    margin: 0 auto;
+}
+
+.kasa-housing-box {
+    height: 100%;
+    position: relative;
+
+}
+
+.kasa-housing-slider {
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.kasa-housing-boutton-left {
+    position: absolute;
+    top: 40%;
+    left: 23px;
+    color: #FFFFFF;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.kasa-housing-boutton-right {
+    position: absolute;
+    top: 40%;
+    right: 23px;
+    color: #FFFFFF;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.kasa-housing-text {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #FFFFFF;
+    z-index: 1;
+}
+
+@media screen and (max-width: 767px) { /* Mobile */
+    .kasa-housing {
+        max-width: 767px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+     .kasa-housing-map {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .kasa-housing-banner {
+        width: 100%;
+        height: 255px;
+        margin: 0 auto;
+    }
+
+    .kasa-housing-box {
+        height: 100%;
+        position: relative;
+    
+    }
+
+    .kasa-housing-boutton-left {
+        position: absolute;
+        width: 12px;
+        height: 20px;
+        top: 48%;
+        left: 10px;
+        color: #FFFFFF;
+        z-index: 1;
+        cursor: pointer;
+    }
+    
+    .kasa-housing-boutton-right {
+        position: absolute;
+        width: 12px;
+        height: 20px;
+        top: 48%;
+        right: 10px;
+        color: #FFFFFF;
+        z-index: 1;
+        cursor: pointer;
+    }
+
+    .kasa-housing-text {
+        position: absolute;
+        bottom: 25px;
+        font-size: 14px;
+    }
+
+    .kasa-housing-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 16px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .kasa-housing-description {
+        gap: 5px;
+    }
+
+    .kasa-housing-description span {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500; 
+    }
+    
+    .kasa-housing-title {
+        font-size: 18px;
+        color: #FF6060;
+    }
+    
+    .kasa-housing-location {
+        font-size: 14px;
+        color: #FF6060;
+    }
+
+    .kasa-housing-tag {
+        margin-top: 10px;
+        margin-bottom: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .kasa-housing-tag-box {
+        height: 18px;
+        border-radius: 5px;
+        min-width: 0px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .kasa-housing-tag-box span {
+        font-size: 10px;
+    }
+
+    .kasa-housing-user {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .kasa-housing-userInfo {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        order: 1;
+        align-items: center;
+        text-align: right;
+        gap: 10px;
+    }
+    
+    .kasa-housing-userInfo img {
+        width: 32px;
+        height: 32px;
+        border-radius: 100px;
+    }
+    
+    .kasa-housing-userInfo span {
+        font-size: 12px;
+        max-width: 50px;
+    }
+
+    .kasa-housing-rating {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+        gap: 5px;
+    }
+
+    .kasa-housing-rating img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .kasa-housing-collapse {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .kasa-housing-collapse div {
+        width: 98%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    
+    .kasa-housing-collapse span {
+        font-weight: 400;
+        font-size: 12px;
+    }
+    
+    .kasa-housing-collapse h2 {
+        font-weight: 500;
+        font-size: 13px;
+    }
+    
+    .kasa-housing-collapse div #kasa-expend {
+        width: 98%;
+        padding-top: 17px;
+        padding-bottom: 17px;
+    }
+
+    #kasa-collapse {
+        margin-bottom: 20px;
+    }
 }

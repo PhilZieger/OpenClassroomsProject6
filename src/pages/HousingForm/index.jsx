@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom'
 import Tag from '../../components/Tag';
 import Rating from '../../components/Rating';
 import Collapse from '../../components/Collapse';
+import ImageSlider from '../../components/ImageSlider';
 
 function HousingForm() {
     const { id } = useParams()
@@ -11,9 +12,9 @@ function HousingForm() {
       <div className='kasa-housing'>
         {datas.map((data) => 
         data.id === id ? (
-        <div key={id}>
+        <div key={id} className='kasa-housing-map'>
             <div className='kasa-housing-banner'>
-                <img src={data.pictures[0]} alt="Slider Home" />
+                <ImageSlider slides={data.pictures} />
             </div>
 
             <div className='kasa-housing-header'>
