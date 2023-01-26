@@ -113,10 +113,11 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 76px;
 }
 
 .kasa-housing-collapse div {
-    width: 534px;
+    width: 96%;
 }
 
 .kasa-housing-collapse span {
@@ -136,11 +137,16 @@
 }
 
 .kasa-housing-collapse div #kasa-expend {
-    width: 546px;
+    width: 96%;
+}
+
+.kasa-housing-map {
+    width: 100%;
+    margin: 0 auto;
 }
 
 .kasa-housing-banner {
-    width: 1240px;
+    width: 100%;
     height: 415px;
     margin: 0 auto;
 }

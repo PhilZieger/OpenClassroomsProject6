@@ -1,12 +1,19 @@
 .kasa-about {
     max-width: 1240px;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    flex-wrap: wrap;
     margin-top: 28px;
     margin-bottom: 28px;
+}
+
+.kasa-about div {
+    width: 97%;
+    margin: 0 auto;
 }
 
 .kasa-about-img {
@@ -20,7 +27,8 @@
 }
 
 .kasa-about-collapse {
-    width: 975px;
+    /* width: 975px; */
+    width: 90%;
     height: 47px;
     padding-left: 18px;
     padding-right: 30px;
@@ -41,13 +49,13 @@
 }
 
 .kasa-about-expend {
-    width: 987px;
-    padding-left: 18px;
-    padding-right: 18px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    width: 20px;
+    padding-top: 17px;
+    padding-bottom: 17px;
     background: #F7F7F7;
     border-radius: 0px 0px 5px 5px;
+    padding-left: 18px;
+    padding-right: 30px;
 }
 
 .kasa-about-expend span {
@@ -59,8 +67,8 @@
 }
 
 .kasa-about-collapse-box {
-    margin-top: 33px;
-    margin-bottom: 33px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 @media screen and (max-width: 767px) { /* Mobile */

@@ -3,7 +3,7 @@ import rightArrow from '../../assets/right-arrow.png';
 
 import { useState } from "react";
 
-const ImageSlider = ({slides}) => {
+const Gallery = ({slides}) => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const goToPrevious = () => {
@@ -25,13 +25,13 @@ const ImageSlider = ({slides}) => {
         </div>
         ) : (
             <div className="kasa-housing-box">
-            <img className='kasa-housing-boutton-left' alt="Left Arrow" src={leftArrow} onClick={goToPrevious} />
-            <img className='kasa-housing-boutton-right' alt="Right Arrow" src={rightArrow} onClick={goToNext} />
-            <div className="kasa-housing-slider" style={{backgroundImage: `url(${slides[currentIndex]})`}}></div>
-            <div className="kasa-housing-text">{currentIndex + 1}/{slides.length}</div>
-        </div>
+                <img className='kasa-housing-boutton-left' alt="Left Arrow" src={leftArrow} onClick={goToPrevious} />
+                <img className='kasa-housing-boutton-right' alt="Right Arrow" src={rightArrow} onClick={goToNext} />
+                <div className="kasa-housing-slider" style={{backgroundImage: `url(${slides[currentIndex]})`}}></div>
+                <div className="kasa-housing-text">{currentIndex + 1}/{slides.length}</div>
+            </div>
         )
     )
 }
 
-export default ImageSlider;
+export default Gallery;

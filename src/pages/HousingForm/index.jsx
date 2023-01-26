@@ -4,17 +4,22 @@ import { useParams } from 'react-router-dom'
 import Tag from '../../components/Tag';
 import Rating from '../../components/Rating';
 import Collapse from '../../components/Collapse';
-import ImageSlider from '../../components/ImageSlider';
+import Gallery from '../../components/Gallery';
+import Error from '../../components/Error';
 
 function HousingForm() {
     const { id } = useParams()
+    var compteur = 0
+    console.log(datas.length)
     return (
+
+        
       <div className='kasa-housing'>
         {datas.map((data) => 
         data.id === id ? (
         <div key={id} className='kasa-housing-map'>
             <div className='kasa-housing-banner'>
-                <ImageSlider slides={data.pictures} />
+                <Gallery slides={data.pictures} />
             </div>
 
             <div className='kasa-housing-header'>
@@ -42,7 +47,14 @@ function HousingForm() {
             </div>
 
         </div>
-        ) : null
+        ) : (
+            compteur = compteur + 1,
+            (
+                compteur === datas.length ? (
+                   <Error /> 
+                ) : null
+            )
+        )
         )}
       </div>
     )
