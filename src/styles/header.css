@@ -34,6 +34,10 @@
     text-decoration-line: underline;
 }
 
+.selected {
+    text-decoration-line: underline;
+}
+
 @media screen and (max-width: 767px) { /* Mobile */
     .kasa-header {
         max-width: 767px;
